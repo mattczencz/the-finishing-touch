@@ -1,0 +1,6 @@
+/* CSS Reset, this allows us to manually set padding and margin so we don't have default values */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
