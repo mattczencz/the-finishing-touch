@@ -12,9 +12,9 @@ function Header(props) {
                 </ul>
                 <div className="logo"><Link to="/">The Finishing Touch</Link></div>
                 <ul className="nav-items">
-                    <li className="nav-item"><Link to="#">Search</Link></li>
-                    <li className="nav-item"><Link to="/cart">Cart</Link></li>
-                    <li className="nav-item"><Link to="#">Account</Link></li>
+                    <li className="nav-item"><Link to="#"><i class="fas fa-search"></i></Link></li>
+                    <li className="nav-item"><Link to="/cart"><i class="fas fa-shopping-bag"></i></Link></li>
+                    <li className="nav-item"><Link to="#"><i class="fas fa-user"></i></Link></li>
                 </ul>
             </nav>
             <div className="blur"></div>

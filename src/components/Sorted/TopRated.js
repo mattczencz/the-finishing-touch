@@ -1,10 +1,10 @@
-import '../../styles/topfive.scss';
+import '../../styles/toprated.scss';
 import Product from "../Product";
 
 function TopRated(props) {
     const loaded = () => {
         // Array to hold reduced list
-        const topFive = []
+        const topRated = []
         // Variable to hold a new array of only items with rating of 5
         const topItems = props.allMakeup.filter((item) => {
             console.log(item)
@@ -12,10 +12,10 @@ function TopRated(props) {
         })
 
         for(let i = 0; i < 10; i++){
-            topFive.push(<Product key={topItems[i].id}{...topItems[i]}/>) 
+            topRated.push(<Product key={topItems[i].id}{...topItems[i]}/>) 
         }
 
-        return topFive
+        return topRated
     }
 
     const loading = () => {
@@ -23,10 +23,12 @@ function TopRated(props) {
     }
 
     return (
-        <section className="topfive">
-            <h1>Top Rated:</h1>
+        <>
+        <h1 className="title">Top Rated:</h1>
+        <div className="toprated">
             {props.allMakeup ? loaded() : loading()}
-        </section>
+        </div>
+        </>
     )
 }
 

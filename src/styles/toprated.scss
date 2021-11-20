@@ -1,0 +1,13 @@
+.title {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+.toprated {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px clamp(15px, 3%, 50px);
+    overflow-x: scroll;
+}
