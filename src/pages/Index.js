@@ -1,11 +1,8 @@
-import {Link} from 'react-router-dom'
 import '../styles/main.scss'
 import '../styles/index.scss'
 // Importing different Lists for Home Page content
 import TopRated from '../components/Sorted/TopRated';
 import ProductTypes from '../components/Sorted/ProductTypes';
-// Importing individual Product
-import Product from '../components/Product';
 
 // Importing components for home page
 import Hero from '../components/Hero';

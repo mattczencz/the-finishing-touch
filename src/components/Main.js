@@ -7,6 +7,7 @@ import Show from '../pages/Show';
 import ByType from '../pages/ByType';
 import TypeResults from '../pages/TypeResults';
 import ByBrand from '../pages/ByBrand';
+import BrandResults from '../pages/BrandResults';
 import Cart from '../pages/Cart';
 
 function Main(props) {
@@ -38,13 +39,16 @@ function Main(props) {
                     <ByType/>
                 </Route>
                 <Route path="/type/:type" render={(rp) => (
-                    <TypeResults {...rp}/>
+                    <TypeResults {...rp} allMakeup={allMakeup}/>
                 )}/>
 
                 {/* By Brand Pages*/}
-                <Route path="/brand">
+                <Route exact path="/brand">
                     <ByBrand/>
                 </Route>
+                <Route path="/brand/:brand" render={(rp) => (
+                    <BrandResults {...rp} allMakeup={allMakeup}/>
+                )}/>
 
                 {/* Cart Page*/}
                 <Route path="/cart">
