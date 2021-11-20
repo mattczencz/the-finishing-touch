@@ -7,6 +7,7 @@ function TopRated(props) {
         const topFive = []
         // Variable to hold a new array of only items with rating of 5
         const topItems = props.allMakeup.filter((item) => {
+            console.log(item)
             return item.rating === 5;
         })
 
