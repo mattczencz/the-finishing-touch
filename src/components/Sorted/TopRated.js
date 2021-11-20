@@ -1,3 +1,4 @@
+import '../../styles/topfive.scss';
 import Product from "../Product";
 
 function TopRated(props) {
@@ -21,7 +22,7 @@ function TopRated(props) {
     }
 
     return (
-        <section>
+        <section className="topfive">
             <h1>Top Rated:</h1>
             {props.allMakeup ? loaded() : loading()}
         </section>

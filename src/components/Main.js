@@ -10,7 +10,7 @@ function Main(props) {
     const [allMakeup, setAllMakeup] = useState(null)
 
     // Variable to hold API URL
-    const URL = "http://makeup-api.herokuapp.com/api/v1/products.json"
+    const URL = "http://makeup-api.herokuapp.com/api/v1/products.json/"
 
     // Function to get All Makeup
     const getAllMakeup = async () => {
@@ -27,7 +27,7 @@ function Main(props) {
                 <Route exact path="/">
                     <Index allMakeup={allMakeup}/>
                 </Route>
-                <Route path="/:id" render={(rp) => {
+                <Route path="/products/:id" render={(rp) => {
                     <Show {...rp} allMakeup={allMakeup}/>
                 }}/>
             </Switch>

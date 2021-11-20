@@ -1,7 +1,10 @@
+import { Link } from 'react-router-dom'
+
 function Product(props) {
     return (
         <div>
-            <h1>{props.name}</h1>
+            <h3>{props.name}</h3>
+            <Link to={`/products/${props.id}`}>View More Details</Link>
         </div>
     )
 }
