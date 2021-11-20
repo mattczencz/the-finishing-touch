@@ -44,7 +44,7 @@ function Main(props) {
 
                 {/* By Brand Pages*/}
                 <Route exact path="/brand">
-                    <ByBrand/>
+                    <ByBrand allMakeup={allMakeup}/>
                 </Route>
                 <Route path="/brand/:brand" render={(rp) => (
                     <BrandResults {...rp} allMakeup={allMakeup}/>
