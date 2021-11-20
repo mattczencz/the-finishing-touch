@@ -1,7 +1,15 @@
 import {Link} from 'react-router-dom'
 import '../styles/main.scss'
+import '../styles/index.scss'
+// Importing different Lists for Home Page content
 import TopRated from '../components/Sorted/TopRated';
+import ProductTypes from '../components/Sorted/ProductTypes';
+// Importing individual Product
 import Product from '../components/Product';
+
+// Importing components for home page
+import Hero from '../components/Hero';
+
 
 function Index(props) {
     // Function to run if data has loaded
@@ -11,10 +19,14 @@ function Index(props) {
         ))
         
         return (
-            <section>
-                <TopRated allMakeup={props.allMakeup}/>
-                {allItems}
-            </section>
+            <>
+                <Hero/>
+                <section className="home-content">
+                    <TopRated allMakeup={props.allMakeup}/>
+                    <ProductTypes />
+                    {allItems}
+                </section>
+            </>
         )
     }
 
