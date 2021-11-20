@@ -14,9 +14,9 @@ import Hero from '../components/Hero';
 function Index(props) {
     // Function to run if data has loaded
     const loaded = () => {
-        const allItems = props.allMakeup.map((item) => (   
-            <Product key={item.id} {...item}/>
-        ))
+        // const allItems = props.allMakeup.map((item) => (   
+        //     <Product key={item.id} {...item}/>
+        // ))
         
         return (
             <>
@@ -24,7 +24,7 @@ function Index(props) {
                 <section className="home-content">
                     <TopRated allMakeup={props.allMakeup}/>
                     <ProductTypes />
-                    {allItems}
+                    {/* {allItems} */}
                 </section>
             </>
         )

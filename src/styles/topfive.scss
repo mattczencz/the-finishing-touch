@@ -1,7 +1,13 @@
 .topfive {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     border: 1px solid black;
+    margin: 40px auto;
 
     h1 {
+        text-align: center;
+        width: 100%;
         font-size: 40px;
     }
 }
