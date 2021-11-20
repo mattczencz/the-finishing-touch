@@ -10,7 +10,7 @@ function Header(props) {
                     <li className="nav-item"><Link to="/type">By Type</Link></li>
                     <li className="nav-item"><Link to="/brand">By Brand</Link></li>
                 </ul>
-                <div className="logo"><Link to="/">The Final Touch</Link></div>
+                <div className="logo"><Link to="/">The Finishing Touch</Link></div>
                 <ul className="nav-items">
                     <li className="nav-item"><Link to="#">Search</Link></li>
                     <li className="nav-item"><Link to="/cart">Cart</Link></li>
