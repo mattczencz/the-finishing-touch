@@ -2,7 +2,7 @@ import '../styles/hero.scss'
 function Hero(props) {
     return (
         <div className="hero">
-            <h1>HERO SECTION</h1>
+            <h1>{props.text}</h1>
         </div>  
     )
 }

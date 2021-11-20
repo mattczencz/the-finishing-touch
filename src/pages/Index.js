@@ -14,13 +14,14 @@ import Hero from '../components/Hero';
 function Index(props) {
     // Function to run if data has loaded
     const loaded = () => {
+        //! Commented this out to clean up the home page while we work, this was just displaying all of the items
         // const allItems = props.allMakeup.map((item) => (   
         //     <Product key={item.id} {...item}/>
         // ))
         
         return (
             <>
-                <Hero/>
+                <Hero text="HERO SECTION"/>
                 <section className="home-content">
                     <TopRated allMakeup={props.allMakeup}/>
                     <ProductTypes />

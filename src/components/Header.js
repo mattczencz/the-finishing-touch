@@ -7,13 +7,13 @@ function Header(props) {
         <header>
             <nav className="navbar">
                 <ul className="nav-items">
-                    <li className="nav-item"><Link to="#">By Type</Link></li>
-                    <li className="nav-item"><Link to="#">By Brand</Link></li>
+                    <li className="nav-item"><Link to="/type">By Type</Link></li>
+                    <li className="nav-item"><Link to="/brand">By Brand</Link></li>
                 </ul>
                 <div className="logo"><Link to="/">The Final Touch</Link></div>
                 <ul className="nav-items">
                     <li className="nav-item"><Link to="#">Search</Link></li>
-                    <li className="nav-item"><Link to="#">Cart</Link></li>
+                    <li className="nav-item"><Link to="/cart">Cart</Link></li>
                     <li className="nav-item"><Link to="#">Account</Link></li>
                 </ul>
             </nav>

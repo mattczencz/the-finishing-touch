@@ -1,9 +1,12 @@
 import '../styles/main.scss';
 import {useEffect, useState} from "react";
 import { Switch, Route } from 'react-router';
+// Importing Pages
 import Index from '../pages/Index';
 import Show from '../pages/Show';
-
+import ByType from '../pages/ByType';
+import ByBrand from '../pages/ByBrand';
+import Cart from '../pages/Cart';
 
 function Main(props) {
     // State to hold all makeup
@@ -26,6 +29,15 @@ function Main(props) {
             <Switch>
                 <Route exact path="/">
                     <Index allMakeup={allMakeup}/>
+                </Route>
+                <Route path="/type">
+                    <ByType/>
+                </Route>
+                <Route path="/brand">
+                    <ByBrand/>
+                </Route>
+                <Route path="/cart">
+                    <Cart/>
                 </Route>
                 <Route path="/products/:id" render={(rp) => {
                     <Show {...rp} allMakeup={allMakeup}/>
