@@ -1,4 +1,7 @@
-import CartItem from '../components/Cart/CartItem';
+import CartItem from './CartItem';
+import Summary from './Summary';
+import "../styles/cart.scss"
+
 import {useEffect, useState} from "react";
 
 
@@ -40,19 +43,27 @@ function Cart(props) {
    
     const loaded = () => {
         return ( 
-            <div >
-                <h1>Cart</h1>
-                <p>This is the Cart Page.</p>
-                <div className="cart">           
+            <div className= "cart_container">
+                <div className="cart_title">
+                  <h1>Cart</h1>
+                </div>
+                <div className="cart">   
+                  
                 {cart.length > 0 ?
+                   
                     cart.map((product,index)=>{
                         return (
-                            <CartItem key={index} product={product} updateCart={updateCart} deleteCart={deleteCart} />
-                            )}) 
+                          <div className="products">
+                            <CartItem key={index} product={product} updateCart={updateCart} deleteCart={deleteCart} /> 
+                          </div>)})
                             :
-                            <h2>Your cart is empty</h2>
+                          <h2>Your cart is empty</h2>
                 }
-                <button>Checkout</button>
+                  <div className="summary">
+                    {cart.length > 0 &&
+                              <Summary key="cart._id" cart={cart} deleteCart={deleteCart}/>
+                              }
+                  </div>
                 </div> 
             </div>  
         );

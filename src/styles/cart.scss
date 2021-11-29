@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.cart{
+    
+    position: relative;
+    width: 100%;
+    margin-top: 150px;
+    justify-content: center;
+}
+.products{
+    margin: 30px 10px 10px 30px;
+    width: 70%;
+    float:left;
+    justify-content: center;
+    
+}
+.summary{
+    width: 30%;
+    float: left ;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
