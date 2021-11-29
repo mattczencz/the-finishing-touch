@@ -1,5 +1,5 @@
-import CartItem from './CartItem';
-import Summary from './Summary';
+import CartItem from '../components/Cart/CartItem';
+import Summary from '../components/Cart/Summary';
 import "../styles/cart.scss"
 
 import {useEffect, useState} from "react";

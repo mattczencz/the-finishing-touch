@@ -1,4 +1,4 @@
-import "../styles/summary.scss"
+import "../../styles/summary.scss"
 
 function Summary (props) {
 
