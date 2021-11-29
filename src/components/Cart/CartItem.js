@@ -1,5 +1,6 @@
 import { useState} from "react";
 
+
 function CartItem ({product,updateCart,deleteCart}) {
 
     const[item, setItem] = useState (product)
@@ -26,15 +27,13 @@ function CartItem ({product,updateCart,deleteCart}) {
       };
 
     return (
-      
         <div className="item">
             <div className="item_pic">
                 <img src={item.imagen_link} alt={item.name} />
             </div>
-            <div className="item_descrip">
-                <h3>{item.name}</h3>
-                <h3>Brand : {item.brand}</h3>
-                <h2>Price : {item.price}</h2>
+            <div className="item_description">
+                <h3>{item.brand} - {item.name}</h3>
+                <p>Price : {item.price.toFixed(2)}</p>
             </div>
             <div className="item_form">
                 <button onClick={handleDecrement}>-</button>
@@ -52,5 +51,6 @@ function CartItem ({product,updateCart,deleteCart}) {
         </div>
         );
 }
+ 
  
 export default CartItem
