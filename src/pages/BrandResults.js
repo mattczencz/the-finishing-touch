@@ -1,5 +1,5 @@
 import Product from "../components/Product";
-
+import '../styles/brandresults.scss';
 function BrandResults(props) {
     // Array to hold matching brands
     const matchingBrand = []
@@ -16,9 +16,12 @@ function BrandResults(props) {
     }
 
     return (
-        <section className="brands">
-            {matchingBrand}
-        </section>
+        <> 
+            <h1 className="title">{brand} Products:</h1>
+            <section className="brands">
+                {matchingBrand}
+            </section>
+        </>
     )
 }
 

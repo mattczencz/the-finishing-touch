@@ -57,7 +57,7 @@ function Show(props) {
             <div className="content">
                 <p>{item.description}</p>
                 <a href={item.product_link} target="_blank">Purchase This Product</a>
-                <button onclick={handleChange}>Add To Cart</button>
+                <button onClick={handleChange}>Add To Cart</button>
             </div>
         </>
         )
