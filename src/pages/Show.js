@@ -24,13 +24,13 @@ function Show(props) {
     const loaded = () => {
         return(
             <>
-            <ShowHero text={item.name} img={item.image_link} rating={item.rating} price={item.price}/>
-            <div className="content">
-                <p>{item.description}</p>
-                <a href={item.product_link} target="_blank">Purchase This Product</a>
-                <button onSubmit={addItem(item)}>Add To Cart</button>
-            </div>
-        </>
+                <ShowHero text={item.name} img={item.image_link} rating={item.rating} price={item.price}/>
+                <div className="content">
+                    <p>{item.description}</p>
+                    <a href={item.product_link} target="_blank">Purchase This Product</a>
+                    <button onSubmit={addItem(item)}>Add To Cart</button>
+                </div>
+            </>
         )
     }
     
