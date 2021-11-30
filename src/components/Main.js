@@ -15,7 +15,7 @@ function Main(props) {
     const [allMakeup, setAllMakeup] = useState(null)
 
     // Variable to hold API URL
-    const URL = "http://makeup-api.herokuapp.com/api/v1/products.json/"
+    const URL = "https://makeup-api.herokuapp.com/api/v1/products.json/"
 
     // Function to get All Makeup
     const getAllMakeup = async () => {
