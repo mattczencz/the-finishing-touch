@@ -7,7 +7,7 @@ import {useEffect, useState} from "react";
 
 function Cart(props) {
     const[cart, setCart] = useState (null);
-    const URL = "https://the-finishing-touch.herokuapp.com/";
+    const URL = "https://the-finishing-touch.herokuapp.com/cart/";
 
     const getCart = async() => {
         const response = await fetch(URL);

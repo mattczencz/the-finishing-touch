@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "../styles/show.scss"
 import ShowHero from '../components/ShowHero'
 
@@ -7,6 +8,18 @@ function Show(props) {
     const item = allMakeup.find(i => i.id.toString() === id)
     console.log(item)
 
+    const URL = "https://the-finishing-touch.herokuapp.com/cart/";
+
+    const addItem = async (item) => {
+        await fetch(URL, {
+            method: 'post',
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(item),
+        })
+    }
+
     // Function for data to be loaded
     const loaded = () => {
         return(
@@ -15,6 +28,7 @@ function Show(props) {
             <div className="content">
                 <p>{item.description}</p>
                 <a href={item.product_link} target="_blank">Purchase This Product</a>
+                <button onSubmit={addItem(item)}>Add To Cart</button>
             </div>
         </>
         )
