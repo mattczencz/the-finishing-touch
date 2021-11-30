@@ -18,7 +18,7 @@ function ByBrand(props) {
 
     return(
         <>
-            <Hero text="BY BRAND"/>    
+            <Hero text="SHOP BY BRAND"/>    
             <BrandList brands={brands} />
         </>
     )

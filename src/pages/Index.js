@@ -13,11 +13,10 @@ function Index(props) {
     const loaded = () => {   
         return (
             <>
-                <Hero text="HERO SECTION"/>
+                <Hero text="All works of art need a finishing touch"/>
                 <section className="home-content">
                     <TopRated allMakeup={props.allMakeup}/>
                     <ProductTypes />
-                    {/* {allItems} */}
                 </section>
             </>
         )

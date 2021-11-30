@@ -3,12 +3,33 @@
     width: 100%;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: space-between;
-    border: 1px solid black;
+    justify-content: flex-start;
     padding: 40px 20px;
     
     h1 {
         font-size: 40px;
         width: 100%;
+    }
+
+    .type {
+        width: 33%;
+        padding: 15px;
+    }
+    .type a{
+        text-decoration: underline solid pink;
+        font-family: 'Playfair Display SC', serif;
+        letter-spacing: 4px;
+        color: #000;
+
+        &:focus, &:visited, &:link {
+            color: #000;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .brandlist .type {
+        width: 100%;
+        padding: 15px;
     }
 }

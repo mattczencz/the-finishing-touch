@@ -56,10 +56,12 @@ function ProductTypes(props) {
     })
 
     return (
-        <section className="producttypes">
-            <h1>Product Types:</h1>
-            {displayed}
-        </section>
+        <>
+            <h1 className="title">Product Types:</h1>
+            <section className="producttypes">
+                {displayed}
+            </section>
+        </>
     )
 }
 
