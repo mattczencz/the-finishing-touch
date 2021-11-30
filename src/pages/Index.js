@@ -1,20 +1,24 @@
-import {Link} from 'react-router-dom'
 import '../styles/main.scss'
+import '../styles/index.scss'
+// Importing different Lists for Home Page content
 import TopRated from '../components/Sorted/TopRated';
-import Product from '../components/Product';
+import ProductTypes from '../components/Sorted/ProductTypes';
+
+// Importing components for home page
+import Hero from '../components/Hero';
+
 
 function Index(props) {
     // Function to run if data has loaded
-    const loaded = () => {
-        const allItems = props.allMakeup.map((item) => (   
-            <Product key={item.id} {...item}/>
-        ))
-        
+    const loaded = () => {   
         return (
-            <section>
-                <TopRated allMakeup={props.allMakeup}/>
-                {allItems}
-            </section>
+            <>
+                <Hero text="All works of art need a finishing touch"/>
+                <section className="home-content">
+                    <TopRated allMakeup={props.allMakeup}/>
+                    <ProductTypes />
+                </section>
+            </>
         )
     }
 
