@@ -1,4 +1,5 @@
 import Product from "../components/Product"
+import '../styles/productresults.scss'
 
 function TypeResults(props) {
     // Array to hold the products that match the type
@@ -16,9 +17,12 @@ function TypeResults(props) {
     }
 
     return (
+        <>
+        <h1 className="title">{type} Products:</h1>
         <section className="types">
             {matchingTypes}
         </section>
+        </>
     )
 }
 
