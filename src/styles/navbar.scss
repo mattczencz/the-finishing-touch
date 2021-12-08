@@ -42,8 +42,7 @@ $navCream: #FFFBE2;
                 color: $linkColor;
             }
             &:hover, &:focus {
-                color: $linkColor !important;
-                opacity: 90%;
+                color: #0c2422de;
             }
         }
     }
@@ -78,8 +77,7 @@ $navCream: #FFFBE2;
                     color: $linkColor;
                 }
                 &:hover, &:focus {
-                    color: $linkColor;
-                    opacity: 90%;
+                    color: #0c2422de;
                 }
             }
 
