@@ -42,7 +42,7 @@ $navCream: #FFFBE2;
                 color: $linkColor;
             }
             &:hover, &:focus {
-                color: $linkColor;
+                color: $linkColor !important;
                 opacity: 90%;
             }
         }
