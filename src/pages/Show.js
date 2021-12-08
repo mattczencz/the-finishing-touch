@@ -18,23 +18,24 @@ function Show(props) {
         product_type: "",
         tag_list: "",
     })
-    const handleChange =()=>{
-       
-        setNewForm({ brand : item.brand,
+    const handleChange = () => {
+
+        setNewForm({
+            brand: item.brand,
             name: item.name,
             quantity: newForm.quantity + 1,
             price: item.price,
             imagen_link: item.image_link,
             description: item.description,
             product_type: item.product_type,
-            tag_list:item.tag_list
-            });
+            tag_list: item.tag_list
+        });
         addItem(newForm)
-        
+
     }
 
 
-    
+
 
     const URL = "https://the-finishing-touch.herokuapp.com/cart/";
 
@@ -50,19 +51,18 @@ function Show(props) {
 
     // Function for data to be loaded
     const loaded = () => {
-       
-        return(
+        return (
             <>
-            <ShowHero text={item.name} img={item.image_link} rating={item.rating} price={item.price}/>
-            <div className="content">
-                <p>{item.description}</p>
-                <a href={item.product_link} target="_blank">Purchase This Product</a>
-                <button onClick={handleChange}>Add To Cart</button>
-            </div>
-        </>
+                <ShowHero text={item.name} img={item.image_link} rating={item.rating} price={item.price} />
+                <div className="content">
+                    <p>{item.description}</p>
+                    <a href={item.product_link} target="_blank">Visit product site</a>
+                    <button onClick={handleChange}>Add To Cart</button>
+                </div>
+            </>
         )
     }
-    
+
     // Function for while data is loading
     const loading = () => (
         <h1>Loading...</h1>

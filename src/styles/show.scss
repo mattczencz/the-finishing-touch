@@ -4,4 +4,22 @@
     p {
         font-size: 16px;
     }
+
+    a {
+        font-size: large;
+        margin-right: 10px;
+        text-decoration: none;
+
+
+        &:visited, &:hover, &:focus, &:link {
+            text-decoration: none;
+        }
+    }
+
+    button {
+        padding: 5px 15px;
+        border-radius: 4px;
+        border: none;
+        background-color: lightblue;
+    }
 }
